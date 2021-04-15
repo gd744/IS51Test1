@@ -9,23 +9,3 @@ If OPTION1 and OPTION2 are equal, user output will read "Both Options pay the sa
 If OPTION 1 is greater, output will read "Option1 pays more"
 If OPTION 2 is greater output will read "Option2 pays more"
 """
-#PSUEDOCODE
-# Option1
-#     return 100 * 10
-# Option 2 
-#     amount = 1
-#     list1 = []
-#     loops 10 times
-#         adds amount to list1
-#         amount doubles, *=2
-#         reads = sum of all items in loop
-#     return sum
-# main()
-#     var1 = Option1
-#     var2 = Option2
-#     if var1 = var2
-#         print "Both options pay the same."
-#     if var1 < var2
-#         print "Option 2 pays more"
-#     else
-#         "Option 1 pays more"

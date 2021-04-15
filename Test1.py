@@ -9,10 +9,10 @@ If OPTION1 and OPTION2 are equal, user output will read "Both Options pay the sa
 If OPTION 1 is greater, output will read "Option1 pays more"
 If OPTION 2 is greater output will read "Option2 pays more"
 """
-#PSUEDOCODE
+# PSUEDOCODE
 # Option1
 #     return 100 * 10
-# Option 2 
+# Option 2
 #     amount = 1
 #     list1 = []
 #     loops 10 times
@@ -29,3 +29,31 @@ If OPTION 2 is greater output will read "Option2 pays more"
 #         print "Option 2 pays more"
 #     else
 #         "Option 1 pays more"
+
+
+def option1():
+    return 100 * 10
+
+
+def option2():
+    amount = 1
+    list1 = []
+    for i in range(0, 10):
+        list1.append(amount)
+        amount *= 2
+    total = sum(list1)
+    return total
+
+
+def main():
+    answer = ""
+    var1 = option1()
+    var2 = option2()
+    if var1 == var2:
+        answer = "Both Options Pay the Same"
+    elif var1 < var2:
+        answer = "Option 2 pays more"
+    else:
+        answer = "Option 1 pays more"
+    print(answer)
+main()
